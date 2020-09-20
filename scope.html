@@ -22,6 +22,20 @@
         </header>
         <br>
         <h1>
+            Scopes and Limits
+        </h1>
+        <p class="info"> 
+            The application must go through QA to ensure functionality and a mostly-bug-free user experience, the application must also return its diagnosis results with an acceptable margin of error - if the symptoms and metrics the user has inputted or the application was able to collect from the sensors and the camera footage is not enough for the AI to return any diagnosis of at least a 50% possibility, then the user will be given a warning to consider the following results with absolute care. We are not required to give diagnosis that are 100% accurate, but only ><strong>a </strong><strong><em>list of most likely illnesses/diseases</em></strong>  and ><strong><em>how likely</em></strong>  (with the use of percentages) if possible, the rest is based on judgement from the medical professional using PetCare. The purpose is not to ><em> replace></em>  the physician, only to help them ><em> narrow down></em>  the cause for more timely and precise treatment. Diseases can share many common traits and symptoms, many of which slow down or hinder the correct diagnosis, what we strive to do is ><strong><em>shorten</em></strong>  the diagnosis process and ><strong><em>reduce</em></strong>  the probability of a miss-diagnosis as much as possible. > Because this is an AI project, a timeline estimate for our AI development is difficult to pinpoint - a machine learning project requires data for the training procedure, and the data quality highly determines the quality of the final solution, moreover, there is the ><em> no-free-lunch></em>  problem to overcome. Once the team is able to come up with a good model, they would then need to create the best dataset for training, the plethora of other AI systems in healthcare may help us in achieving both of these objectives.
+            <br><br>
+            Another important factor is accessibility, since PetCare is a service, we have to ensure there be as little down-time as possible, but not in cases without our control like outages that happen to our Cloud Service Provider, meaning on our end the application must stay live as long as the servers are running. The range of cover for our service is also important, but this unfortunately is dependent on our Cloud Service Provider of choice, of which there are many to choose from. We are not responsible for situations where the client loses internet connectivity and thus loses access to our services.
+            <br><br>
+            The application will be developed for the most common OS platform, most likely Windows 7 and above and OS X for the desktop, Android and IOS for the mobile version. We are not responsible for supporting any other OSes as it is highly unlikely that our target user base will use anything other than the aforementioned OSes.
+            <br><br>
+            The sensors must be accurate if applied to the correct measurement site (body part of the dog or cat). The sensor must remain functional for the duration of it being applied or worn on the animal and give accurate readings including: Heart beat, Blood pressure, HRV (heart rate variability). The design must be sturdy enough to withstand a reasonable level of blunt impact like being dropped from waist height, some level of water-resistance but not completely (like being spilled on but ><strong>NOT</strong> dropped into a pool).
+            <br><br>
+            The team of technicians sent for installation and training is not responsible for situations where the client platform (either desktops or mobile devices) is not supported by our application like outdated OSes (operating systems), not meeting minimum hardware requirements, or when the client is not within range of coverage for our services.
+        </p>
+        <h1>
             Tools and Technologies
         </h1>
         <p class="info">
@@ -31,6 +45,303 @@
         <p class="info">
             For the application, constant in-house testing of the features and of the AI is paramount. Hiring third-party QA agents is also up for consideration if the workload is too much for the in-house team. For the sensors, stress-testing for durability can be done by the hardware team, and the accuracy of the sensors can be tested on one of a team member&rsquo;s pet (Khoi&rsquo;s cat) with the help of a veterinarian.
         </p>
+        <h1>Time Frame</h1>
+        <table class="table">
+            <tbody>
+            <tr>
+            <td>
+            <p>Week</p>
+            </td>
+            <td>
+            <p>Objectives accomplished</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>1</p>
+            </td>
+            <td>
+            <p>Research on similar AI systems used in healthcare, specifically BuoyHealth. Once we knew there were many products similar to what we hope to accomplish was possible, we decided to move further into planning</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>2</p>
+            </td>
+            <td>
+            <p>Researching different ways an AI system can retrieve metrics for input (from cameras with footage recognition, audio from mics, text input, etc.) we stumbled on the <em>Stemoscope</em> product - an auditory sensor that is wearable by a baby or an animal to pick up heart beats, and decided to try making our own sensor (that can be sold separately or ran with the PetCare app)&nbsp;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>3</p>
+            </td>
+            <td>
+            <p>We wanted a better, yet more accessible design for our sensors as opposed to <em>Stemoscope</em> (which uses self-patented audio sensors) and tried to think of popular products that can help monitor heart-related metrics like the Apple Watch which uses PPG (photoplethysmography). Upon further research into PPG technology we found that there was an abundance of vendors and products using this technology specifically for health monitoring and looked for ways this can be applied for dogs and cats. At first glance the veterinary scene has only been using PPG sensors for surgical operations, when the animal is put under anesthesia the sensor is placed on its tongue, which is not good for our purpose. We then found a research paper detailing alternative measurement sites (body part) that PPG sensors can be applied to dogs and cats, this was the breakthrough we were hoping for and thus decided to go into designing the sensor.</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>4</p>
+            </td>
+            <td>
+            <p>This week we spent most of our time completing our report, but the design of the sensor is something we also tried to conceptualize.&nbsp;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>5</p>
+            </td>
+            <td>
+            <p>The team will likely work on the pitch for the project, during which we will showcase our design for the sensor (A round housing with a diameter of 2-3cms, on one side of the housing with be a collection of LEDs and a photodetector, behind them a small pcb circuit as the controller with a bluetooth module) and the features and functions of our PetCare app</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>6</p>
+            </td>
+            <td>
+            <p>Try our best to find investors for the project (this process may take longer than one week)</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>7</p>
+            </td>
+            <td>
+            <p>Contact Microsoft/Amazon/Google (or any local business) on their Cloud AI platform offerings to decide on the best option. Find manufacturing plants for the sensor production (we will most likely procure the components from other vendors and have them sent to the production plant for assembly)</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>8</p>
+            </td>
+            <td>
+            <p>Application/AI development is started along with finding the right professionals to help with the project. The current goal for app development however is just a mobile app as the controller for our sensors.</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>9</p>
+            </td>
+            <td>
+            <p>While the AI project and the mobile app is being developed, the team will also focus on putting the sensors into production by procuring the needed components and working hand in hand with the production plant.</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>10</p>
+            </td>
+            <td>
+            <p>This week will be spent stress testing the sensors and making any needed adjustments to its design and materials to meet the quality criterias that have been set</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>11</p>
+            </td>
+            <td>
+            <p>Before the sensors can be launched, pricing of the product must be finalized, and this will be the week the team will strategize on what is a reasonable price.</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>12</p>
+            </td>
+            <td>
+            <p>Come up with a marketing strategy to gain as much exposure as possible for the sensors like creating social media presence, advocate animal healthcare to pet owners, etc.</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>13</p>
+            </td>
+            <td>
+            <p>Contact and work with all possible retailers to get our product onto shelves and into the hands of the consumer.</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>14</p>
+            </td>
+            <td>
+            <p>Launching the sensors for commercial use, along with the mobile app (which currently only work as the controller for the sensors).</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>15</p>
+            </td>
+            <td>
+            <p>Because we are still a business, financial success of the sensors is very important to the longevity of this project so initial feedback from customers will be collected (through social media, app store reviews, and third-party retail reviews) to make any needed adjustments to our product.</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>16</p>
+            </td>
+            <td>
+            <p>The first fiscal report of our sensors is something our investors and us will base the remaining parts of our project on. The team will continue to work on the AI and the PetCare desktop app as they have been for the past 8 weeks. Its progress over the coming weeks will likely determine the entire path for PetCare going forward</p>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        <h1>Risks</h1>
+        <table class="table">
+            <tbody>
+            <tr>
+            <td>
+            <p><strong>Risk</strong></p>
+            </td>
+            <td>
+            <p><strong>Very high</strong></p>
+            </td>
+            <td>
+            <p><strong>High</strong></p>
+            </td>
+            <td>
+            <p><strong>Moderate</strong></p>
+            </td>
+            <td>
+            <p><strong>Low</strong></p>
+            </td>
+            <td>
+            <p><strong>Very Low</strong></p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p><strong>L x I</strong></p>
+            </td>
+            <td>
+            <p>21-25</p>
+            </td>
+            <td>
+            <p>16-20</p>
+            </td>
+            <td>
+            <p>11-15</p>
+            </td>
+            <td>
+            <p>6-10</p>
+            </td>
+            <td>
+            <p>1-5</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p><strong>Code</strong></p>
+            </td>
+            </tr>
+            </tbody>
+        </table>
+        <p>The Impact x Likelihood rating matrix</p>
+        <table class="table">
+            <tbody>
+            <tr>
+            <td>
+            <p><strong>Risk</strong></p>
+            </td>
+            <td>
+            <p><strong>Description</strong></p>
+            </td>
+            <td>
+            <p><strong>Likelihood</strong></p>
+            </td>
+            <td>
+            <p><strong>Impact</strong></p>
+            </td>
+            <td>
+            <p><strong>Code</strong></p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>Adoption</p>
+            </td>
+            <td>
+            <p>One of the biggest risks is perhaps being able to convince medical professionals to adopt PetCare, physicians may believe that success of the application would mean their replacement, which is not an entirely baseless fear - as AI has made its way into every facet of human life, many traditional methods have been made obsolete with humans being no exception. If PetCare fails to alleviate this fear, it will not be adopted enough for our service to remain as a functional business.</p>
+            </td>
+            <td>
+            <p>Likely</p>
+            </td>
+            <td>
+            <p>Severe</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>Facility restrictions</p>
+            </td>
+            <td>
+            <p>Our project requires a spacious area to make animals feel comfortable and as natural as possible while they are experiencing the program. There is not only one animal at the same time, there may be many of them which will demand a lot of room and it is a challenging problem for our technicians and the delivery of our services. Extenuating circumstances that complicate or prevent the installation of our services for the client would mean having to refund/cancel the client&rsquo;s charges for our services.</p>
+            </td>
+            <td>
+            <p>Not Likely</p>
+            </td>
+            <td>
+            <p>Mild</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>Lack of experience</p>
+            </td>
+            <td>
+            <p>At the moment, experience is something that all our members lack to finish a project of this scale. We do not have the needed knowledge on the softwares and hardware that are able to support us during the project. Moreover, the project would require having medical expertise, so we need a lot of veterinary experience</p>
+            </td>
+            <td>
+            <p>Likely</p>
+            </td>
+            <td>
+            <p>Serious</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>Demand for the sensors</p>
+            </td>
+            <td>
+            <p>Most pet owners do not go through the trouble of monitoring their pets&rsquo; health until they show unusual behaviour or symptoms or given instructions to do so from a physician, which would affect the financial performance of the sensors</p>
+            </td>
+            <td>
+            <p>Likely</p>
+            </td>
+            <td>
+            <p>Serious</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>Frontier market</p>
+            </td>
+            <td>
+            <p>Currently, our only competitor seems to be <em>Stemoscope</em> of whom we are not privy to the success of their products and how our entry into this market may affect our own performance as a business. And for the PetCare diagnostic AI we are the first in the business. This lack of information or forecast analysis is dangerous for any business.</p>
+            </td>
+            <td>
+            <p>Likely</p>
+            </td>
+            <td>
+            <p>Mild</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>Development woes</p>
+            </td>
+            <td>
+            <p>During the course of development, our machine learning model may not meet certain criterias (results do not meet a bare minimum for accuracy and reliability), or some features will prove to be too costly to maintain. This would require the team to re-evaluate our project plan and the business processes.</p>
+            </td>
+            <td>
+            <p>Likely</p>
+            </td>
+            <td>
+            <p>Mild</p>
+            </td>
+            </tr>
+            </tbody>
+        </table>
         <h1>Group Processes and Communication</h1>
         <p class = 'info'>Communication and communication skills have been an essential part in every group project, through it group members are able to deliver and receive information, ideas, changes, plans and updates for the project. In my group, we communicate face-to-face and online, we usually meet on RMIT campus after some lectures if we need to discuss something about the project, then we also make phone calls and have a group chat to discuss some minor issues daily. We have agreed that meetings take place twice a week and more if there is any emergency case. Normally, the meetings are held at RMIT campus after finishing lectures or tutorials and Facebook is the main platform that we believe to use for online communication and meetings. At first, our group will have a rule that members will be replaced if they are not active for three consecutive days without any acceptable reason and members have to tell the group if they have outside problems. We work on shared folders and documents such as Google Docs, Google Drive or Github, so that we can manage workload and processes of other members in the group. By that way, the new group members will have data, information and be able to continue on old members track if there is any disappeared teammate.</p>
         <h1>Skills and Jobs</h1>
